@@ -1,0 +1,85 @@
+nav .img-circle{
+	width: 48px;
+	height: 48px;
+}
+.navbar-header img{
+	padding: 6px 12px;
+}
+.enroll{
+	margin-left:0px;
+	
+}
+#enroll{
+	margin-bottom:0px ;
+}
+
+.my-wrapper-content {
+    padding: 20px 10px 75px;
+}
+
+
+.course-select-sel {
+  background-color: #1ab394;
+  background-image: none;
+  border-radius: 3px;
+  color: white;
+  padding: 6px 7px;
+  font-size: 15px;
+ 
+  
+}
+.lab-description{
+	overflow:auto;
+	
+}
+
+
+@media  (min-width: 383px) and (max-width: 480px){
+	.enroll{
+	margin-left:5px;	
+ }
+}
+
+@media  (min-width: 531px) {
+	.enroll{
+	margin-left:5px;	
+ }
+}
+
+@media  (min-width: 320px) and (max-width: 480px)   {
+#enroll{	  
+	    padding: 3px 5px;
+		font-size:12px;	
+	}
+	#superintendent-th{
+		display:none !important;
+	}
+	#email-th{
+		display:none !important;
+	}
+	.superintendent-td{
+			display:none !important;
+	}
+	.email-td{
+		display:none !important;
+	}
+}
+
+@media(min-width: 481px) and (max-width: 930px)  {
+#enroll{
+		padding: 2px 3px;
+		font-size:12px;
+	}
+	
+	#superintendent-th{
+		display:none !important;
+	}
+	
+	.superintendent-td{
+			display:none !important;
+	}
+}
+
+
+
+

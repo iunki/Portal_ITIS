@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/custom-style.css" rel="stylesheet">
+	
+	<!-- FooTable -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+	
+	<!-- Mainly scripts -->
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	<!-- Custom and plugin javascript -->
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+
+	<!-- jQuery UI  -->
+	<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="js/plugins/iCheck/icheck.min.js"></script>
+	   <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+	
+	<script src="js/js.js"> </script>
+
+
+	
+</head>
+<body >
+	<div id="wrapper">
+
+		<nav class="navbar-default navbar-static-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav metismenu" id="side-menu">
+					<li class="nav-header">
+						<div class="dropdown profile-element"> <span>
+							<img alt="image" class="img-circle" src="img/profile_small.jpg">
+						</span>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Алексей Панзер</strong>
+							</span> <span class="text-muted text-xs block">Студент</a>
+						</div>
+						<div class="logo-element">
+							ИТИС
+						</div>
+					</li>
+
+					<li>
+						<a href="index.html"><i class="fa fa-table"></i> <span class="nav-label">Расписание</span> <span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li><a href="index.html">Группа</a></li>
+							<li><a href="#">Преподаватель</a></li>
+							<li><a href="#">Аудитория</a></li>
+							<li><a href="#">По времени</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-flask"></i> <span class="nav-label">Лаборатории</span></a></li>
+					<li><a href="#"><i class="fa fa-book"></i> <span class="nav-label">Курсы по выбору</span></a></li>
+					<li><a href="#"><i class="fa fa-star"></i> <span class="nav-label">Рейтинг</span></a></li>
+					<li><a href="#"><i class="fa fa-file-text-o"></i> <span class="nav-label">Деканат</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="page-wrapper" class="gray-bg">
+			<div class="row border-bottom">
+				<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+					<div class="navbar-header">
+						<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+						<img src="img/itis.png" alt="">
+					</div>
+					<ul class="nav navbar-top-links navbar-right">
+						<li>
+							<a href="login.html">
+								<i class="fa fa-sign-out"></i> Выйти
+							</a>
+						</li>
+					</ul>
+
+				</nav>
+			</div>
+		<div class="wrapper my-wrapper-content animated fadeInRight">
+		<div class="row">
+			
+	   	<div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
+			<div class="ibox float-e-margins">
+			<div class="ibox-title">
+			 <h5 >Список лабораторий</h5>  
+			 <div class="ibox-tools">
+			  
+			 <div class="input-group-btn">
+			  
+				
+			   <select class="course-select-sel " name="account"> 
+										 <option> Выберите курс</option>
+										<option> 1</option>
+                                        <option> 2</option>
+                                        <option> 3</option>
+                                        <option> 4</option>
+                                    </select>
+					   </div></div>
+			</div>
+			
+			<div class="ibox-content">
+                        <div class="row">
+						
+                            <div class="col-sm-12">
+							
+							<select class="form-control form-group footable" multiple="">
+											<option >Digital Media Lab</option>
+											<option>Android Lab</option>
+											<option>iOS Lab</option>
+                                            <option>Fujitsu</option>
+											<option>Jetbrains</option>
+											<option>FlatStack</option>
+											<option>Digital Media Zone</option>
+                                        </select>
+										
+										<div class="text-center">
+                           <button type="button" class="btn  btn-primary "><strong>Записаться</strong></button>
+                            </div>
+			</div>
+			
+			
+			
+			
+				 </div>
+				 
+				
+				  
+				 
+				 
+			</div>
+		   </div>
+	   </div>
+	   <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6 lab-description">
+			<div class="ibox float-e-margins">
+			<div class="ibox-title">
+			 <h5 >Описание лаборатории</h5>
+			</div>
+			
+			<div class="ibox-content">
+                        <div class="row">
+							<div class="col-sm-12 ">
+							<p>  Добро пожаловать в шестидесятый блог моей рубрики "Субъективный взгляд". Сегодня я снова решил поговорить о наболевшем - а именно об отношениях разработчиков и ПК-геймеров. Как вы уже догадались, непосредственно речь пойдёт о ПК-версии NieR: Automata. Стоит сказать, что игра ещё до релиза подняла вокруг себя хайп на всех платформах, а учитывая ориентацию Platimun Games, которая зачастую обделяла своим внимаем ПК-геймеров, здесь игра вызвала небывалый ажиотаж.
+
+Итак, релиз игры на ПК состоялся 17-го числа прошлого месяца. Честно, сказать, подозрения о крайне низком качестве порта у меня появилось ещё в момент объявления системных требованиях. Будем честны - графика в игре, в лучшем случае, выглядит на уровне 2010-го года. А соответственно, и в минимальных системных требованиях должны быть Core 2 Duo и GeForce 8600 GT, а в рекомендуемых - Core 2 Quad и GeForce GTX 460 (или даже GTS 450). Вместо этого мы имеем в минимальных GTX 770 и GTX 980, которые намного превосходят консоли. При этом, мы имеем графику, которая абсолютно не отличается от консолей.  </p>
+			</div>
+			
+			
+			
+			
+				 </div>
+		  
+			</div>
+		   </div>
+	   </div>
+    </div>
+</div>
+
+			<div class="footer">
+    <div class="pull-right col-lg-2  col-md-4 col-xs-12">
+        <img src="img/kfu.png" alt="">
+    </div>
+    <div class="col-lg-2 col-md-6 col-xs-12">
+        <i class="fa fa-map-marker" aria-hidden="true"></i> 420008, Казань, ул. Кремлевская, 35 <br>
+        <i class="fa fa-phone" aria-hidden="true"></i> (843) 221-34-33
+    </div>
+</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
