@@ -1,0 +1,19 @@
+.image-bg {
+    background: url(../img/2017-04-17.png); 
+    background-repeat: round;
+}
+
+.indent {
+    padding: 20px;
+}
+
+.col {
+    background-color: rgb(255, 255, 255);
+    font-size: 110%;
+    margin: 20px;
+}
+
+/*
+.l {
+    margin-left: 0px;
+}*/
