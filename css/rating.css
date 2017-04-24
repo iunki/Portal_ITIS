@@ -4,16 +4,19 @@
 }
 
 .indent {
-    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.col {
-    background-color: rgb(255, 255, 255);
-    font-size: 110%;
-    margin: 20px;
+.course-select-sel{
+    background-color: #1ab394;
+    background-image: none;
+    border-radius: 3px;
+    color: white;
+    padding: 6px 7px;
+    font-size: 15px;
 }
 
-/*
-.l {
-    margin-left: 0px;
-}*/
+.tabl {
+    margin-bottom: 100px;
+}
