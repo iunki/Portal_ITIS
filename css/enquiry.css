@@ -22,11 +22,17 @@
     position: absolute;
 }
 
-.t {
-    font-size: 70%;
-}
-
 .r {
     margin-top: 10px;
 }
-
+@media screen and (max-width: 767px) {
+    table{
+        font-size: 10px;
+    }
+    .bt{
+        position: static;
+    }
+    .k{
+        position: static;
+    }
+}

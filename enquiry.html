@@ -27,55 +27,64 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav metismenu" id="side-menu">
-                    <li class="nav-header">
-                        <div class="dropdown profile-element"> <span>
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
 							<img alt="image" class="img-circle" src="img/profile_small.jpg">
 						</span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Алексей Панзер</strong>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class="clear"> <span class="block m-t-xs"> <strong
+                                    class="font-bold">Алексей Панзер</strong>
 							</span> <span class="text-muted text-xs block">Студент</a>
-						</div>
-						<div class="logo-element">
-							ИТИС
-						</div>
-					</li>
+                    </div>
+                    <div class="logo-element">
+                        ИТИС
+                    </div>
+                </li>
 
-					<li>
-						<a href="index.html"><i class="fa fa-table"></i> <span class="nav-label">Расписание</span> <span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li><a href="index.html">Группа</a></li>
-                                <li><a href="#">Преподаватель</a></li>
-                                <li><a href="#">Аудитория</a></li>
-                                <li><a href="#">По времени</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-flask"></i> <span class="nav-label">Лаборатории</span></a></li>
-                    <li><a href="#"><i class="fa fa-book"></i> <span class="nav-label">Курсы по выбору</span></a></li>
-                    <li><a href="#"><i class="fa fa-star"></i> <span class="nav-label">Рейтинг</span></a></li>
-                    <li><a href="#"><i class="fa fa-file-text-o"></i> <span class="nav-label">Деканат</span></a></li>
-                </ul>
-                </div>
-        </nav>
-        <div id="page-wrapper" class="image-bg">
-            <div class="row border-bottom">
-                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-                    <div class="navbar-header"> <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> <img src="img/itis.png" alt=""> </div>
-                    <ul class="nav navbar-top-links navbar-right">
-                        <li>
-                            <a href="login.html"> <i class="fa fa-sign-out"></i> Выйти </a>
-                        </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-table"></i> <span class="nav-label">Расписание</span> <span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="schedule-group.html">Группа</a></li>
+                        <li><a href="teacher.html">Преподаватель</a></li>
+                        <li><a href="auditor.html">Аудитория</a></li>
+                        <li><a href="time.html">По времени</a></li>
                     </ul>
-                </nav>
-            </div>
+                </li>
+                <li><a href="laboratories.html"><i class="fa fa-flask"></i> <span
+                        class="nav-label">Лаборатории</span></a></li>
+                <li><a href="elective-course.html"><i class="fa fa-book"></i> <span
+                        class="nav-label">Курсы по выбору</span></a></li>
+                <li><a href="rating.html"><i class="fa fa-star"></i> <span class="nav-label">Рейтинг</span></a></li>
+                <li><a href="enquiry.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">Деканат</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="image-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i
+                        class="fa fa-bars"></i> </a> <img src="img/itis.png" alt=""></div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html"> <i class="fa fa-sign-out"></i> Выйти </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+
             <div class="row">
-                <div class="col-md-4 bl"> <img src="img/devushka.png" class="girl" width="225" height="392">
+                <div class="col-md-4 bl"><img src="img/devushka.png" class="girl hidden-xs" width="225" height="392">
                     <div class="k">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>Кол-во справок</h5> </div>
+                                <h5>Кол-во справок</h5></div>
                             <div class="ibox-content">
                                 <div class="input-group-btn">
                                     <select class="course-select-sel">
@@ -95,22 +104,23 @@
                         <div class="col-md-4 col-md-offset-1">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-title">
-                                    <h5>Рейтинг</h5> </div>
+                                    <h5>Время работы</h5>
+                                </div>
                                 <div class="ibox-content">
                                     <table class="table table-striped t">
                                         <tbody>
-                                            <tr>
-                                                <th>Пн-пт</th>
-                                                <th>8:00-17:00</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Обед</th>
-                                                <th>13:00-14:00</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Сб, вс</th>
-                                                <th>выходной</th>
-                                            </tr>
+                                        <tr>
+                                            <th>Пн-пт</th>
+                                            <td>8:00-17:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Обед</th>
+                                            <td>13:00-14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Сб, вс</th>
+                                            <td>выходной</td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -119,22 +129,22 @@
                         <div class="col-md-5 col-md-offset-1">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-title">
-                                    <h5>Сотрудники деканата</h5> </div>
+                                    <h5>Сотрудники деканата</h5></div>
                                 <div class="ibox-content">
                                     <table class="table table-striped t">
                                         <tbody>
-                                            <tr>
-                                                <th>ФИО</th>
-                                                <th>E-mail</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Глумова Т.А.</th>
-                                                <th>glumova@gmail.com</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Сосновская Е.А.</th>
-                                                <th>sosnovskaya@gmail.com</th>
-                                            </tr>
+                                        <tr>
+                                            <th>ФИО</th>
+                                            <th>E-mail</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Глумова Т.А.</td>
+                                            <td>glumova@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сосновская Е.А.</td>
+                                            <td>sosnovskaya@gmail.com</td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -145,35 +155,35 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-title">
-                                    <h5>Контактные лица ИТИС </h5> </div>
+                                    <h5>Контактные лица ИТИС </h5></div>
                                 <div class="ibox-content">
                                     <table class="table table-bordered table-striped t">
                                         <tbody>
-                                            <tr>
-                                                <th>Должность</th>
-                                                <th>ФИО</th>
-                                                <th>Аудитория</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Директор Высшей школы ИТИС</th>
-                                                <th>Хасьянов Айрат Фаридович</th>
-                                                <th>1505 б</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Заместитель по учебной работе</th>
-                                                <th>Насрутдинов Марат Фаритович</th>
-                                                <th>1506</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Заместитель по воспитательной работе</th>
-                                                <th>Бакирова Айсылу Наримовна</th>
-                                                <th>15.10 б</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Заместитель по коммерческой деятельности</th>
-                                                <th>Максимова Ирина Александровна</th>
-                                                <th>15.05 а</th>
-                                            </tr>
+                                        <tr>
+                                            <th>Должность</th>
+                                            <th>ФИО</th>
+                                            <th>Аудитория</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Директор Высшей школы ИТИС</td>
+                                            <td>Хасьянов Айрат Фаридович</td>
+                                            <td>1505 б</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Заместитель по учебной работе</td>
+                                            <td>Насрутдинов Марат Фаритович</td>
+                                            <td>1506</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Заместитель по воспитательной работе</td>
+                                            <td>Бакирова Айсылу Наримовна</td>
+                                            <td>15.10 б</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Заместитель по коммерческой деятельности</td>
+                                            <td>Максимова Ирина Александровна</td>
+                                            <td>15.05 а</td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -181,17 +191,20 @@
                         </div>
                     </div>
                 </div>
-             
-                <!--CODE HERE-->
-                <div class="footer">
-                    <div class="pull-right"> <img src="img/kfu.png" alt=""> </div>
-                    <div class="col-lg-2 col-md-6 col-xs-12"> <i class="fa fa-map-marker" aria-hidden="true"></i> 420008, Казань, ул. Кремлевская, 35
-                        <br> <i class="fa fa-phone" aria-hidden="true"></i> (843) 221-34-33 </div>
-                </div>
             </div>
         </div>
-        </nav>
+
+        <!--CODE HERE-->
+        <div class="footer">
+            <div class="pull-right"><img src="img/kfu.png" alt=""></div>
+            <div class="col-lg-2 col-md-6 col-xs-12"><i class="fa fa-map-marker" aria-hidden="true"></i> 420008,
+                Казань, ул. Кремлевская, 35
+                <br> <i class="fa fa-phone" aria-hidden="true"></i> (843) 221-34-33
+            </div>
+        </div>
     </div>
+</div>
+
 </body>
 
 </html>
