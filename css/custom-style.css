@@ -37,7 +37,7 @@ nav .img-circle{
 }
 
 .lab-button{
-	    padding: 6px 40px;
+	    padding: 6px 20px;
 }
 .lab-button-div{
 	margin-top:20px;
@@ -52,70 +52,6 @@ padding-right:0px !important;
 }
 
 
-
-
-
-
-
-
-.enroll{
-	margin-left:0px;
-}
-
-#enroll{
-	margin-bottom:0px ;
-}
-
-
-
-
-
-
-@media  (min-width: 383px) and (max-width: 480px){
-	.enroll{
-	margin-left:5px;	
- }
-}
-
-@media  (min-width: 531px) {
-	.enroll{
-	margin-left:5px;	
- }
-}
-
-@media  (min-width: 320px) and (max-width: 480px)   {
-#enroll{	  
-	    padding: 3px 5px;
-		font-size:12px;	
-	}
-	#superintendent-th{
-		display:none !important;
-	}
-	#email-th{
-		display:none !important;
-	}
-	.superintendent-td{
-			display:none !important;
-	}
-	.email-td{
-		display:none !important;
-	}
-}
-
-@media(min-width: 481px) and (max-width: 930px)  {
-#enroll{
-		padding: 2px 3px;
-		font-size:12px;
-	}
-	
-	#superintendent-th{
-		display:none !important;
-	}
-	
-	.superintendent-td{
-			display:none !important;
-	}
-}
 
 
 
