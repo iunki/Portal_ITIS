@@ -1,0 +1,44 @@
+.my-wrapper-content {
+    padding: 20px 10px 100px;
+}
+
+.course-select-sel {
+    background-color: #1ab394;
+    background-image: none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 9px;
+    font-size: 14px;
+
+
+}
+tbody tr:hover {
+    background: #1ab394 !important; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+    cursor:pointer;
+}
+
+table tr.marked{
+    background: #1ab394 !important; /* Цвет фона при клике */
+    color: #fff; /* Цвет текста при наведении */
+}
+
+.course-title{
+    margin: 0px 10px 0px 0px !important;
+    float:none !important;
+}
+
+.lab-button{
+    padding: 6px 20px;
+}
+.lab-button-div{
+    margin-top:20px;
+}
+
+
+@media  (min-width: 340px) and (max-width: 400px){
+    .lab{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+}

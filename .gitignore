@@ -1,0 +1,15 @@
+.classpath
+.project
+target/
+bin/
+.settings/
+.idea/
+*.iml
+.DS_Store
+persistence.properties
+Procfile
+hs_err_pid6352.log
+hs_err_pid9228.log
+replay_pid6352.log
+replay_pid9228.log
+src/test/

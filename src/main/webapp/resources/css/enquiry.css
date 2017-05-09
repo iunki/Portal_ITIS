@@ -1,0 +1,38 @@
+.bl {
+    position: relative;
+/*    font-size: 250%;*/
+}
+
+.girl {
+/*    padding: 100px;*/
+    position: absolute;
+    left: 50px;
+    top: 90px;
+}
+.bt {
+    position: absolute;
+    left: 195px;
+    top: 155px;     
+}
+
+.k {
+    top: 20px;
+    left: 185px;
+    width: 150px;
+    position: absolute;
+}
+
+.r {
+    margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+    table{
+        font-size: 10px;
+    }
+    .bt{
+        position: static;
+    }
+    .k{
+        position: static;
+    }
+}

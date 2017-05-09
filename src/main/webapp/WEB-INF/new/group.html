@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/slick/slick.css" rel="stylesheet">
+    <link href="css/plugins/slick/slick-theme.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom-style.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI  -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Data picker -->
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="js/plugins/datapicker/bootstrap-datepicker.ru.js"></script>
+    <script src="js/plugins/jquery.matchHeight/jquery.matchHeight.js" type="text/javascript"></script>
+
+    <!-- slick carousel-->
+    <script src="js/plugins/slick/slick.min.js"></script>
+
+    <script>
+        function setTableHeight() {
+            $('.datepicker').css('height', $('.datepicker td').width() * 7);
+            $('.table-condensed').css('height', $('.table-condensed td').width() * 7);
+        }
+        $(window).resize(function () {
+            setTableHeight();
+        });
+        $(function () {
+            $(".row-eq-height .column .ibox-content").matchHeight({
+                byRow: false
+            });
+            $('.slick').slick({
+                adaptiveHeight: true
+            });
+            $('#datepicker').datepicker({
+                inline: true,
+                sideBySide: true,
+                locale: 'ru',
+                language: 'ru',
+                showTodayButton: true,
+            });
+            setTableHeight();
+        })
+    </script>
+    <style>
+        .datepicker,
+        .table-condensed {
+            width: 100%;
+        }
+
+        .wrapper-content {
+            padding: 20px 10px 100px;
+        }
+
+        .schedule td:nth-child(3) {
+            /*word-wrap: break-word;
+            table-layout: fixed;*/
+            word-break: break-all;
+        }
+
+        .datepicker table, .datepicker table tr th, .datepicker table tr td {
+            background-color: #fff;
+            border: 1px solid #ebebeb;
+        }
+
+        .datepicker table tr:nth-child(2n) td {
+            background-color: #f5f5f5;;
+        }
+
+        .datepicker table tr th.prev, .datepicker table tr th.next, .datepicker table tr th.datepicker-switch {
+            background-color: #1ab394;
+            color: #fff;
+            border-color: #18a689;
+            border-radius: 0;
+        }
+
+        .datepicker table tr th.prev:hover, .datepicker table tr th.next:hover, .datepicker table tr th.datepicker-switch:hover {
+            background-color: #18a689;
+        }
+
+        @media screen and (max-width: 767px) {
+            /*.wrapper.wrapper-content{
+                padding-right: 0;
+                padding-left: 0;
+            }*/
+            .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-12 {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+            .ibox-content {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .schedule tr td:last-child, .schedule tr th:last-child {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+							<img alt="image" class="img-circle" src="img/profile_small.jpg">
+						</span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class="clear"> <span class="block m-t-xs"> <strong
+                                    class="font-bold">Алексей Панзер</strong>
+							</span> <span class="text-muted text-xs block">Студент</a>
+                    </div>
+                    <div class="logo-element">
+                        ИТИС
+                    </div>
+                </li>
+
+                <li>
+                    <a href="index.html"><i class="fa fa-table"></i> <span class="nav-label">Расписание</span> <span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="schedule-group.html">Группа</a></li>
+                        <li><a href="teacher.html">Преподаватель</a></li>
+                        <li><a href="auditor.html">Аудитория</a></li>
+                        <li><a href="time.html">По времени</a></li>
+                    </ul>
+                </li>
+                <li><a href="laboratories.html"><i class="fa fa-flask"></i> <span
+                        class="nav-label">Лаборатории</span></a></li>
+                <li><a href="elective-course.html"><i class="fa fa-book"></i> <span
+                        class="nav-label">Курсы по выбору</span></a></li>
+                <li><a href="rating.html"><i class="fa fa-star"></i> <span class="nav-label">Рейтинг</span></a></li>
+                <li><a href="enquiry.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">Деканат</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+                    </a>
+                    <img src="img/itis.png" alt="">
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Выйти
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-8">
+                <h2>Расписание по группам</h2>
+            </div>
+        </div>
+        <!--CODE HERE-->
+        <div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-lg-6 col-lg-push-1 col-md-push-0">
+                    <div class="row row-eq-height">
+                        <div class="col-lg-6 col-xs-5">
+                            <div class="ibox column">
+                                <div class="ibox-title hidden-xs">
+                                    <h4>Выберите группу</h4>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="btn-group">
+                                        <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle"
+                                                aria-expanded="false">11-406 <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">11-405</a></li>
+                                            <li><a href="#" class="font-bold">11-406</a></li>
+                                            <li><a href="#">11-407</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">11-303</a></li>
+                                            <li><a href="#">11-304</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-7">
+                            <div class="ibox column">
+                                <div class="ibox-title hidden-xs">
+                                    <h4>Обозначения</h4>
+                                </div>
+                                <div class="ibox-content">
+                                    <span class="label label-primary">Лекция</span>
+                                    <span class="label label-plain">Практика</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="ibox schedule">
+                                <div class="ibox-title hidden-xs">
+                                    <h4>Расписание на день</h4>
+                                </div>
+
+                                <div class="slick">
+                                    <div>
+                                        <div class="ibox-content">
+                                            <h2><span class="day-of-week">Понедельник</span>, <br
+                                                    class="visible-xs"><span>17 апреля</span></h2>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th>Начало</th>
+                                                    <th>Конец</th>
+                                                    <th>Предмет</th>
+                                                    <th>Преподаватель</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>13:35</td>
+                                                    <td>15:05</td>
+                                                    <td>Основы предпринимательства (<span>108</span>)</td>
+                                                    <td>Григорян К.А.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17:00</td>
+                                                    <td>18:30</td>
+                                                    <td>Курс по выбору</td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="ibox-content">
+                                            <h2><span class="day-of-week">Вторник</span>, <br
+                                                    class="visible-xs"><span>18 апреля</span></h2>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th>Начало</th>
+                                                    <th>Конец</th>
+                                                    <th>Предмет</th>
+                                                    <th>Преподаватель</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>10:10</td>
+                                                    <td>11:40</td>
+                                                    <td>Программная инженерия (<span>1308</span>)</td>
+                                                    <td>Кугуракова Х.3.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13:35</td>
+                                                    <td>15:05</td>
+                                                    <td>Основы предпринимательства (<span>108</span>)</td>
+                                                    <td>Григорян К.А.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17:00</td>
+                                                    <td>18:30</td>
+                                                    <td>Курс по выбору</td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-12 col-lg-push-1 col-md-push-0">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h4 class="pull-left">Календарь</h4>
+                            <div class="pull-right"><span class="label gray-bg table-bordered">четная</span><span
+                                    class="label white-bg table-bordered">нечетная</span></div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right col-lg-2  col-md-4 col-xs-12">
+                <img src="img/kfu.png" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 col-xs-12">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 420008, Казань, ул. Кремлевская, 35 <br>
+                <i class="fa fa-phone" aria-hidden="true"></i> (843) 221-34-33
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
